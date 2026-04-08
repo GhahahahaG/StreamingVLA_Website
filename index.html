@@ -6,24 +6,25 @@
   
   <!-- Primary Meta Tags -->
   <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <meta name="title" content="StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation">
   <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta name="description" content="Vision-language-action (VLA) models have demonstrated exceptional performance in natural language-driven perception and control. However, the high computational cost of VLA models poses significant efficiency challenges, particularly for resource-constrained edge platforms in real-world deployments. However, since different stages of VLA (observation, action generation and execution) must proceed sequentially, and wait for the completion of the preceding stage, the system suffers from frequent halting and high latency. To address this, We conduct a systematic analysis to identify the challenges for fast and fluent generation, and propose enabling VLAs with the ability to asynchronously parallelize across VLA stages in a streaming manner. First, we eliminate the reliance on action chunking and adopt action flow matching, which learns the trajectory of action flows rather than denoising chunk-wise actions. It overlaps the latency of action generation and execution. Second, we design an action saliency-aware adaptive observation mechanism, thereby overlapping the latency of execution and observation. Without sacrificing performance, StreamingVLA achieves substantial speedup and improves the fluency of execution. It achieves a 2.4 × latency speedup and reduces execution halting by 6.5 ×.">
   <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <meta name="keywords" content="">
   <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="author" content="Yiran Shi, Dongqi Guo, Tianchen Zhao, FengGao, Liangzhi Shi, Chao Yu, ZhiJian Mo, Qihua Xiao, XiaoShuai Peng, Qingmin Liao, and Yu Wang">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
   <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
+  <meta property="og:site_name" content="Tsinghua University  Lenovo Group Ltd.">
   <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
+  <meta property="og:title" content="StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation">
   <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <meta property="og:description" content="Vision-language-action (VLA) models have demonstrated exceptional performance in natural language-driven perception and control. However, the high computational cost of VLA models poses significant efficiency challenges, particularly for resource-constrained edge platforms in real-world deployments. However, since different stages of VLA (observation, action generation and execution) must proceed sequentially, and wait for the completion of the preceding stage, the system suffers from frequent halting and high latency. To address this, We conduct a systematic analysis to identify the challenges for fast and fluent generation, and propose enabling VLAs with the ability to asynchronously parallelize across VLA stages in a streaming manner. First, we eliminate the reliance on action chunking and adopt action flow matching, which learns the trajectory of action flows rather than denoising chunk-wise actions. It overlaps the latency of action generation and execution. Second, we design an action saliency-aware adaptive observation mechanism, thereby overlapping the latency of execution and observation. Without sacrificing performance, StreamingVLA achieves substantial speedup and improves the fluency of execution. It achieves a 2.4 × latency speedup and reduces execution halting by 6.5 ×.">
+">
   <!-- TODO: Replace with your actual website URL -->
   <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
   <!-- TODO: Create a 1200x630px preview image and update path -->
@@ -37,20 +38,7 @@
   <meta property="article:tag" content="KEYWORD1">
   <meta property="article:tag" content="KEYWORD2">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
-
+  
   <!-- Academic/Research Specific -->
   <meta name="citation_title" content="PAPER_TITLE">
   <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
@@ -74,7 +62,7 @@
 
 
   <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  <title>StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation - Yiran Shi, Dongqi Guo, Tianchen Zhao, FengGao, Liangzhi Shi, Chao Yu, ZhiJian Mo, Qihua Xiao, XiaoShuai Peng, Qingmin Liao, and Yu Wang | Academic Research</title>
   
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
@@ -186,53 +174,7 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
+  
 
   <main id="main-content">
   <section class="hero">
@@ -241,21 +183,38 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation</h1>
             <div class="is-size-5 publication-authors">
               <!-- TODO: Replace with your paper authors and their personal links -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://nicsefc.ee.tsinghua.edu.cn/people/YiranShi" target="_blank">Yiran Shi</a><sup>1</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="" target="_blank">Dongqi Guo</a><sup>1</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                  <a href="https://nicsefc.ee.tsinghua.edu.cn/people/TianchenZhao" target="_blank">Tianchen Zhao</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://nicsefc.ee.tsinghua.edu.cn/people/FengGao" target="_blank">FengGao</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://nicsefc.ee.tsinghua.edu.cn/people/LiangzhiShi" target="_blank">Liangzhi Shi</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://nicsefc.ee.tsinghua.edu.cn/people/ChaoYu" target="_blank">Chao Yu</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="" target="_blank">ZhiJian Mo</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="" target="_blank">Qihua Xiao</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="" target="_blank">XiaoShuai Peng</a><sup>2</sup>,</span>
+                  <span class="author-block">
+                  <a href="" target="_blank">Qingmin Liao</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                  <a href="https://nicsefc.ee.tsinghua.edu.cn/people/YuWang" target="_blank">Yu Wang</a><sup>1,</sup>&dagger;</span>
+
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
                     <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
+                    <span class="author-block"><sup>1</sup>Tsinghua University    <sup> 2 </sup>Lenovo Group Ltd.
                     <!-- TODO: Remove this line if no equal contribution -->
                     <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
                   </div>
@@ -264,7 +223,7 @@
                     <div class="publication-links">
                          <!-- TODO: Update with your arXiv paper ID -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/abs/2603.28565" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -297,7 +256,7 @@
 
                 <!-- TODO: Update with your arXiv paper ID -->
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  <a href="https://arxiv.org/abs/2603.28565" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
@@ -321,12 +280,10 @@
       <!-- TODO: Replace with your teaser video -->
       <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
         <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
+        <source src="static/videos/pick_tp_plate_demo.mp4" type="video/mp4">
       </video>
       <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
+      
     </div>
   </div>
 </section>
@@ -341,7 +298,7 @@
         <div class="content has-text-justified">
           <!-- TODO: Replace with your paper abstract -->
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Vision-language-action (VLA) models have demonstrated exceptional performance in natural language-driven perception and control. However, the high computational cost of VLA models poses significant efficiency challenges, particularly for resource-constrained edge platforms in real-world deployments. However, since different stages of VLA (observation, action generation and execution) must proceed sequentially, and wait for the completion of the preceding stage, the system suffers from frequent halting and high latency. To address this, We conduct a systematic analysis to identify the challenges for fast and fluent generation, and propose enabling VLAs with the ability to asynchronously parallelize across VLA stages in a "streaming" manner. First, we eliminate the reliance on action chunking and adopt action flow matching, which learns the trajectory of action flows rather than denoising chunk-wise actions. It overlaps the latency of action generation and execution. Second, we design an action saliency-aware adaptive observation mechanism, thereby overlapping the latency of execution and observation. Without sacrificing performance, StreamingVLA achieves substantial speedup and improves the fluency of execution. It achieves a 2.4 × latency speedup and reduces execution halting by 6.5 ×.
           </p>
         </div>
       </div>
@@ -351,122 +308,172 @@
 <!-- End paper abstract -->
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+<!-- ...existing code... -->
+
+<!-- ...existing code... -->
+
+<!-- Interleaved image-text section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Overall Framework</h2>
+
+    <div class="columns is-vcentered">
+      <div class="column is-7">
+        <figure>
+          <img src="static/images/final_tea_01.png" alt="Overall framework" loading="lazy" />
+        </figure>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+      <div class="column is-5">
+        <div class="content has-text-justified">
           
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
+          <p>
+            The Vision-Language-Action (VLA) model brings powerful generalization capabilities to embodied intelligence, but its sequential execution of the three stages of "observation-generation-execution" causes frequent pauses between actions, severely impacting the smoothness and real-time performance of interactions. To address this issue, we propose the StreamingVLA framework. By introducing action flow matching and adaptive early observation techniques, it achieves parallel processing of the "generation and execution" and "observation and execution" dimensions, respectively, enabling the model to generate and execute actions asynchronously in a "streaming" manner.
+          </p>
+          <p>
+            In the LIBERO benchmark, StreamingVLA maintains a high success rate of 94.9% (essentially on par with the baseline model's 95.1%) while reducing single-action latency to 31.6 milliseconds, achieving a 2.4x end-to-end speedup. Furthermore, it significantly reduces the halting time during execution from 232.3 milliseconds to 36.0 milliseconds, a reduction of 6.5 times. In real-device experiments, StreamingVLA reduced the average action latency from 271.49 milliseconds to 170.88 milliseconds, achieving a 1.58x speedup, and providing a new solution for the efficient deployment of VLA models in real-world scenarios.
+          </p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <div class="content has-text-justified">
+          <h2 class="title is-3 has-text-centered">Methodology</h2>
+          <h3 class="title is-5">Runtime Analysis</h3>
+          <p>To gain a deeper understanding of the efficiency bottlenecks in the VLA execution process, we first conducted a detailed runtime sequence analysis of a typical VLA model represented by Pi0.5 (as shown in the figure below). This type of model consists of a Visual Language Model (VLM) and a diffusion-based action expert. Its execution flow can be divided into three main stages:</p>
+          <p>First, in the observation stage, the VLM generates hidden features (KV Cache) based on the current image, language commands, and robot state; second, in the action generation stage, the action expert generates an action block containing multiple future actions based on these features through a diffusion process; finally, in the execution stage, the robot executes these actions sequentially, and after completion, enters the next loop (as shown in the lower left of the figure).</p>
+          <p>In the traditional synchronous execution mode, the three stages are strictly sequential and wait for each other. This means that after each action is completed, the system must wait for the next observation and action generation to be completed before continuing execution. The resulting latency time is equal to the sum of the observation time and the action generation time. Our actual tests show that this waiting time is considerable and is the main cause of the robot's disjointed actions.</p>
+          <p>Based on the above analysis, we clarified our optimization objective: to reduce the average latency and halting time of each action while maintaining model performance as much as possible. To this end, we propose to replace the traditional approach of simply compressing the latency of each stage by overlapping the time of different stages, hoping to achieve parallelization of the two dimensions of "action generation and action execution" and "scene observation and action execution", thereby achieving "streaming" execution (as shown in the lower right of the figure).</p>
         </div>
       </div>
+      <div class="column is-7">
+        <figure>
+          <img src="static/images/method_01.png" alt="Methodology" loading="lazy" />
+          <figcaption class="has-text-centered">Runtime analysis of the VLA execution pipeline.</figcaption>
+        </figure>
+      </div>
+      
     </div>
-  </div>
-</section>
-<!-- End video carousel -->
 
+    <div class="columns is-vcentered">
+      
+      <div class="column is-5">
+        <div class="content has-text-justified">
+          <h3 class="title is-5">Action Flow Matching</h3>
+          <p>
+            In the execution pipeline of traditional VLA models, the action generation and execution stages are strictly sequential, which is one of the main reasons for the system's low efficiency. Specifically, under the action block generation mechanism, action experts generate action blocks containing multiple future actions at once through a multi-step diffusion denoising process. Only after the entire action block is fully generated can the robot begin executing the first action. This "generate all first, then execute sequentially" mode ensures no temporal overlap between action generation and execution.
+          </p>
+          <p>
+            To address this, we introduce a state-based action flow matching method. The core idea of this method is to transform the action generation process from "generating an action block at once" to "continuously evolving a state." The model no longer directly predicts the absolute value of actions but maintains an "action space state" that accumulates historical actions and predicts the "velocity field" that evolves this state over time. At each step, the model predicts the velocity field based on the current state and observation information, obtains the action output at the current moment through simple time integration, and updates the state. This process allows each action to be executed immediately after generation, while the model continues to generate the next action based on the updated state, thus achieving seamless overlap between action generation and execution on the time axis.
+          </p>
+          <p>
+            However, adapting this method to large-scale VLA models and the complex benchmark task of Libero presents two key challenges. First, in complex control scenarios, the actions output by the model must pass through a controller to be converted into physical action, causing the linear relationship between actions and physical states to be lost. To address this, we extend state modeling by introducing "action space states" as state variables maintained internally by the model. We also pre-compute the action space states of the complete trajectory to ensure alignment with the physical space states during training. Second, normalization layers in large models can disrupt the crucial additivity upon which the "state plus action equals new state" principle of the flow matching framework relies. We specifically modify this by removing the offset term and unifying the scaling factor, ensuring that the normalized variables still satisfy additivity. This maintains training stability while preserving the core mathematical structure of flow matching.
+          </p>
+          <p>
+            Through these extensions and adjustments, action flow matching was successfully deployed in large-scale VLA models, significantly reducing the waiting time between action generation and execution, laying a solid foundation for achieving parallelism in the "generation-execution" dimension.
+          </p>
+        </div>
+      </div>
+      <div class="column is-7">
+        <figure>
+          <img src="static/images/method-afm_01.png" alt="Action flow matching" loading="lazy" />
+          <figcaption class="has-text-centered">Action flow matching method based on state modeling</figcaption>
+        </figure>
+      </div>
+    </div>
 
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <div class="content has-text-justified">
+          <h3 class="title is-5">Adaptive Early Observation</h3>
+          <p>
+            After action flow matching solves the parallel "generation-execution" problem, the other major source of system latency - the serial waiting between "observation" and "execution" - becomes key to further optimization. If the VLM can start the next round of observation processing before the robot has completed all its actions, the observation and execution times can overlap, thereby further reducing lag time. Early observation technology is proposed to address this goal; its core idea is to start VLM inference for the next round of observation as soon as the robot executes part of the current action block.
+          </p>
+          <p>
+            However, directly performing naive early observation leads to obtaining incorrect scene information, ultimately resulting in a significant deterioration in model performance. Therefore, we propose an adaptive early observation method that dynamically decides whether to perform early observation based on action saliency.
+          </p>
+          <p>
+            Action saliency refers to the degree of influence of a certain action on the subsequent observation results. Highly saliency actions (such as large movements) cause drastic changes in the environment. If such actions are observed before execution, there will be a serious mismatch between the environmental information obtained by the VLM and the actual physical environment, making the generated subsequent actions inaccurate. Conversely, low-saliency actions have minimal impact on environmental changes, and the error caused by early observation is correspondingly smaller.
+          </p>
+          <p>
+            To quantify the saliency of actions, we designed a lightweight Transformer-based predictor to dynamically evaluate the saliency of actions yet to be executed. This predictor takes the current image embedding and the remaining sequence of unexecuted actions as input, and outputs the predicted change in image embedding after these actions are executed. The predictor is trained using observed changes in image embedding after actual execution as a supervisory signal, resulting in a much smaller parameter count and lower training cost compared to a full VLM. During inference, the system calls this predictor to estimate the saliency of remaining actions: if the predicted change is below a preset threshold, the next round of observations is initiated early, achieving parallel observation and execution; if it is above the threshold, observations are performed only after the actions are completed, ensuring the VLM acquires accurate environmental information. The additional overhead of this predictor accounts for only about 5% of the total model inference time, and its training cost is far lower than full model fine-tuning, yet it delivers considerable speedup benefits.
+          </p>
+        </div>
+      </div>
+      <div class="column is-7">
+        <figure>
+          <img src="static/images/method-eo_01.png" alt="Adaptive early observation" loading="lazy" />
+          <figcaption class="has-text-centered">Adaptive early observation for action saliency perception</figcaption>
+        </figure>
+      </div>
+    </div>
 
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
+    <div class="columns is-vcentered">
+      
+      <div class="column is-5">
+        <div class="content has-text-justified">
+          <h2 class="title is-3 has-text-centered">Performance</h2>
+        </div>
+      </div>
+      <div class="column is-7">
+        <div class="content has-text-justified">
+          <h3 class="title is-5">Simulation Environment Testing</h3>
+          
+          <p>
+             We conducted a comprehensive evaluation of StreamingVLA on four task sets within the LIBERO simulation environment. Experimental results show that StreamingVLA achieves a significant efficiency improvement while maintaining a success rate (94.9%) comparable to the baseline model (Pi0.5). Compared to Pi0.5 (h=10), which generates 10 actions per observation, the single-action latency decreased from 49.9 milliseconds to 31.6 milliseconds, achieving a speedup of 1.57 times; the stuttering time was sharply reduced from 230.8 milliseconds to 36.0 milliseconds, a reduction of 6.45 times.
+          </p>
+          <figure>
+          <img src="static/images/Result.png" alt="Experimental results" loading="lazy" />
+          </figure>
+          <h3 class="title is-5">Ablation Experiments</h3>
+          <p>
+            Ablation experiments further validated the effectiveness of each module. State alignment is crucial for successful action flow matching; lack of alignment directly leads to training failure. Introducing alignment significantly boosted the model's success rate to 97.1%, while latency and stuttering were substantially reduced. Adaptive advance observation, compared to random advance observation, increased the success rate from 90.9% to 94.9% at the same trigger frequency, fully demonstrating the effectiveness of its intelligent scheduling.
+          </p>
+          <figure>
+          <img src="static/images/Ablation.png" alt="Experimental results" loading="lazy" />
+          </figure>
+          <h3 class="title is-5">Real-World Experiments</h3>
+          <p>
+            To further verify the effectiveness of StreamingVLA in a real physical environment, we deployed it on the Franka Panda robotic arm platform to perform a grasping-placement task in a desktop workspace. This task requires the robotic arm to grasp an object from a specified location and place it at a target location, a typical scenario for testing action execution accuracy and the timeliness of perception updates. The experiment used a model based on the Pi0.5 architecture, with an action horizon of 8. In the baseline configuration, the original Pi0.5 strategy uses 8 action horizons and 4-step replanning; StreamingVLA uses the same horizons but generates actions in a streaming manner. Experimental results show that the average action latency of StreamingVLA is 170.88 milliseconds, while the average action latency of the original Pi0.5 baseline model is 271.49 milliseconds. This result verifies that StreamingVLA can significantly improve control efficiency in real physical systems, providing crucial speed assurance for real-time robot operation.
+          </p>
+        </div>
         
       </div>
     </div>
-  </section>
-<!--End paper poster -->
+
+    <div class="columns is-vcentered">
+      <div class="column is-5">
+        <div class="content has-text-justified">
+          <h2 class="title is-3 has-text-centered">Summary</h2>
+        </div>
+      </div>
+      <div class="column is-7">
+        <div class="content has-text-justified">
+          <p>
+            This paper addresses the high latency and execution stuttering issues faced by VLA models in practical deployments by proposing the StreamingVLA framework. Through a systematic analysis of the execution process, we identified key bottlenecks and introduced two core technologies: action flow matching and adaptive early observation. These technologies achieve parallel processing in two dimensions: "action generation-action execution" and "scene observation-action execution," respectively. Experimental results show that StreamingVLA achieves significant speed improvements and smoothness enhancements without sacrificing model performance.
+          </p>
+          <p>
+            This work provides deeper insights: when building efficient embodied intelligent systems, optimization should not only focus on model compression but also on the coordination and parallelism of the execution process. The "streaming" execution concept demonstrated by StreamingVLA is not only applicable to VLA models but also provides new design ideas for other multi-stage, multimodal real-time interactive systems, potentially promoting the efficient deployment and widespread application of intelligent systems in real-world scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -480,13 +487,16 @@
           <span class="copy-text">Copy</span>
         </button>
       </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
+      <pre id="bibtex-code"><code>@misc{shi2026streamingvlastreamingvisionlanguageactionmodel,
+      title={StreamingVLA: Streaming Vision-Language-Action Model with Action Flow Matching and Adaptive Early Observation}, 
+      author={Yiran Shi and Dongqi Guo and Tianchen Zhao and Feng Gao and Liangzhi Shi and Chao Yu and ZhiJian Mo and Qihua Xiao and XiaoShuai Peng and Qingmin Liao and Yu Wang},
+      year={2026},
+      eprint={2603.28565},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2603.28565}, 
+}
+</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
