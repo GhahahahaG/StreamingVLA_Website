@@ -38,6 +38,38 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Keep a consistent centered column on desktop. */
+.container.is-fluid {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .section .container.is-fluid {
+    width: 60rem !important;
+    max-width: 60rem !important;
+  }
+
+  .hero .container.is-fluid {
+    width: 60rem !important;
+    max-width: 60rem !important;
+  }
+}
+
+/* Force stacked layout for section columns on all screen sizes. */
+.stack-columns {
+  flex-direction: column !important;
+}
+
+.stack-columns > .column {
+  width: 100% !important;
+}
+
+.stack-columns > .column + .column {
+  margin-top: 1.5rem;
+}
+
 
 /* Modern Button Styles */
 .button {
