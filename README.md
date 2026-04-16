@@ -17,6 +17,10 @@ Vision-Language-Action (VLA) models are powerful for language-conditioned robot 
 
 StreamingVLA addresses this issue by enabling asynchronous, streaming-style coordination across observation, action generation, and action execution. Instead of waiting for each stage to fully finish before the next stage begins, StreamingVLA overlaps critical stages to reduce idle time while maintaining task success.
 
+<p align="center">
+  <img src="assets/final_tea_01.png" alt="Overall Framework" width="900">
+</p>
+
 ## Key Ideas
 
 ### 1) Action Flow Matching (AFM)
@@ -49,6 +53,10 @@ This adaptively overlaps observation and execution while controlling performance
 - Single-action latency: **49.9 ms -> 31.6 ms**
 - End-to-end latency speedup: up to **2.4x**
 - Execution halting reduction: **230.8 ms -> 36.0 ms** (about **6.5x**)
+
+<p align="center">
+  <img src="assets/Result.png" alt="Simulation Results" width="820">
+</p>
 
 ### Real-World Robot (Franka Panda)
 
